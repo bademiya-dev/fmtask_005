@@ -1,0 +1,136 @@
+
+@font-face { font-family: 'FigtreeItalic'; src: url(../assets/fonts/Figtree-Italic-VariableFont_wght.ttf); font-weight:normal; font-style:normal; }
+@font-face { font-family: 'FigtreeRegular'; src: url(../assets/fonts/Figtree-VariableFont_wght.ttf); font-weight:normal; font-style:normal; }
+@font-face { font-family: 'FigtreeExtraBold'; src: url(../assets/fonts/static/Figtree-ExtraBold.ttf); font-weight:normal; font-style:normal; }
+@font-face { font-family: 'FigtreeSemiBold'; src: url(../assets/fonts/static/Figtree-SemiBold.ttf); font-weight:normal; font-style:normal; }
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    
+    font-family: "Figtree", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+    font-size:15px;
+    /* background-color: #ff0; */
+}
+.figtreeItalic{
+    font-family: 'FigtreeItalic';
+}
+.figtreeRegular{
+    font-family: 'FigtreeRegular';
+}
+.figtreeExtraBold{
+    font-family: 'FigtreeExtraBold';
+}
+.figtreeSemiBold{
+    font-family: 'FigtreeSemiBold';
+}
+:root {
+    --brand-yellow: #f5d04e;
+    --brand-black: #131313;
+    --brand-grey: #606060;
+  }
+.container{
+     width:100%;
+     height:100vh;
+     background-color: var(--brand-yellow);
+    
+}
+.wrapper{
+    width:100%;
+    height:100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    width:386px;
+    border:1px solid #000;
+    border-radius:1.5rem;
+    margin:0 auto;
+    background-color:#fff;
+    box-shadow:6px 6px 0px 0px #000;
+
+}
+.card img{
+    margin-top:1.5rem;
+    border-radius:0.5rem;
+    margin-left:1.5rem;
+}
+.txt1{
+    padding-top:0.4rem;
+    padding-bottom:0.4rem;
+    padding-left:0.6rem;
+    padding-right:0.6rem;
+    margin-left:1.5rem;
+    margin-right:17.5rem;
+    margin-top:1rem;
+    color: var(--brand-black);
+    background-color: var(--brand-yellow);
+    border-radius:0.3rem;
+}
+.txt2{
+    margin-left:1.5rem;
+    margin-top:0.8rem;
+    color: var(--brand-black); 
+    font-size:13.5px;
+}
+.txt3{
+    color: var(--brand-black);
+    font-size:26px;
+    margin-left:1.5rem;
+    margin-top:0.9rem;
+    letter-spacing: -0.8px;
+}
+.txt4{
+    margin-left:1.5rem;
+    margin-top:1.2rem;
+    margin-right:4rem;
+    font-weight: 500;
+    line-height: 22px;
+}
+.txt5{
+    display: flex;
+
+}
+.txt5 img{
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+}
+.txt5 p{
+    margin-top: 2rem;
+    margin-left: 0.9rem;
+    margin-bottom:1.5rem;
+}
+
+@media only screen and (max-width: 600px) { 
+    .container{
+        width:100%;
+    }
+    .wrapper{
+        width:100%;
+    }
+    .card{
+        width:328px;
+        height: auto;
+        /* flex-direction: column; */
+        /* flex-direction: column-reverse; */
+    }
+    .card img{
+        width:280px;
+    }
+    .txt5 img{
+        width: 34px;
+        height: 34px;
+    }
+.txt1{
+    margin-right:14rem;
+}
+.txt4{
+    margin-right:0.2rem;
+}
+}
